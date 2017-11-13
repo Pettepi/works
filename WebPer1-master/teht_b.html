@@ -1,0 +1,38 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <title>HTML validointi</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+<h1>Lomakkeen validointi HTML5</h1>
+<div class="image-container">
+    <a class="dotm" href="#">
+        <img src="http://s14.directupload.net/images/111129/44ga9qid.png" alt="dotm" title="dotm" class="dotm-overlay">
+    </a>
+</div>
+
+<form id="myForm" action="/action_page.php" novalidate>
+    Your First Name: <input type="text" name="name" required><br>
+    Your Surname: <input type="text" name="surname" required><br>
+    E-mail: <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="Enter a valid E-mail address"><br>
+    Website: <input type="url" name="website" required><br>
+    Address: <input type="text" name="address"><br>
+    Your Postal number: <input type="number" name="postalnumber"><br>
+    Your Phone number: <input type="text" name="phonenumber" pattern="^\+358[0-9]{9}$" placeholder="+358.."><br>
+    Password: <input type="password" name="password" required><br>
+    <input type="submit">
+</form>
+
+<script src="js/main.js"></script>
+</body>
+</html>
